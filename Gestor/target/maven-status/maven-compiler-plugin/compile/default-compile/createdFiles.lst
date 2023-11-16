@@ -1,0 +1,6 @@
+br\g12\duque\antonio\gestor\Gestor.class
+br\g12\duque\antonio\gestor\InterBanco.class
+br\g12\duque\antonio\gestor\Conexao.class
+br\g12\duque\antonio\gestor\tests\InsertCategoryUseCase.class
+br\g12\duque\antonio\models\Category.class
+br\g12\duque\antonio\dao\CategoryDao.class
