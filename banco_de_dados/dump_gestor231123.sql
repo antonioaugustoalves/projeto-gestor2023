@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 16-Nov-2023 às 21:42
+-- Data de Criação: 17-Nov-2023 às 00:39
 -- Versão do servidor: 5.6.13
 -- versão do PHP: 5.4.17
 
@@ -117,6 +117,16 @@ CREATE TABLE IF NOT EXISTS `categories` (
 INSERT INTO `categories` (`id`, `name`, `description`) VALUES
 (1, 'Teste', 'Categoria de teste');
 
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `cat_view`
+--
+CREATE TABLE IF NOT EXISTS `cat_view` (
+`id` int(11)
+,`name` varchar(50)
+,`description` varchar(255)
+);
 -- --------------------------------------------------------
 
 --
@@ -271,6 +281,15 @@ CREATE TABLE IF NOT EXISTS `users` (
 DROP TABLE IF EXISTS `books_by_units`;
 
 CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `books_by_units` AS select `b`.`id` AS `id`,`b`.`title` AS `title`,`b`.`price` AS `price`,`u`.`city` AS `city` from (`books` `b` join `units` `u`) where (`b`.`unit_id` = `u`.`id`);
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `cat_view`
+--
+DROP TABLE IF EXISTS `cat_view`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `cat_view` AS select `categories`.`id` AS `id`,`categories`.`name` AS `name`,`categories`.`description` AS `description` from `categories`;
 
 --
 -- Constraints for dumped tables
