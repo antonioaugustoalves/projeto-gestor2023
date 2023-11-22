@@ -24,7 +24,7 @@ public class InsertCategoryUseCase {
         boolean success = cd.insert();
         
         if(success){
-            JOptionPane.showMessageDialog(null, "Sucesso!");
+            JOptionPane.showMessageDialog(null, "Operação realizada com sucesso!");
         }else{
            JOptionPane.showMessageDialog(null, "Erro!"); 
         }
