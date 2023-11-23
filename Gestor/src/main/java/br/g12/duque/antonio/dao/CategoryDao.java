@@ -132,8 +132,34 @@ public class CategoryDao implements IRepositoryCategory {
     }
 
     @Override
-    public Category findById(int id) {
-        return null;
+    public Category findById() {
+        String sql = "SELECT name, description FROM categories "
+                +"WHERE id = "+ category.getId();
+        Category category = null;
+        Connection conn = Conexao.getConnection();
+        
+        try{
+            Statement stm = conn.createStatement();
+            ResultSet rs = stm.executeQuery(sql);
+            rs.next(); //Mover o cursor para o 1º resultado encontrado
+            
+            if(rs.getRow() > 0){
+                category = new Category(
+                        rs.getInt("id"),
+                        rs.getString("name"),
+                        rs.getString("description")
+                );
+            }else{
+                System.out.println("Categoria não encontrada");
+                return null;
+            }
+            
+        }catch(SQLException ex){
+            System.out.println("Erro ao executar a consulta: "+ 
+                    ex.getMessage());
+            return null;
+        }
+           return category;     
     }
 
 }

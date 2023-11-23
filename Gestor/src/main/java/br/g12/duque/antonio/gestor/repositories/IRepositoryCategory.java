@@ -16,5 +16,5 @@ public interface IRepositoryCategory {
     public boolean update();
     public boolean delete();
     public ArrayList findAll();
-    public Category findById(int id); //parametros ==> variaveis locais
+    public Category findById(); //parametros ==> variaveis locais
 }
