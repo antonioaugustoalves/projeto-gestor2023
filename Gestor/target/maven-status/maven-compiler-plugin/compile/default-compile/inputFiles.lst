@@ -1,6 +1,8 @@
-D:\Gestor\src\main\java\br\g12\duque\antonio\gestor\InterBanco.java
-D:\Gestor\src\main\java\br\g12\duque\antonio\dao\CategoryDao.java
-D:\Gestor\src\main\java\br\g12\duque\antonio\gestor\Conexao.java
-D:\Gestor\src\main\java\br\g12\duque\antonio\gestor\tests\InsertCategoryUseCase.java
-D:\Gestor\src\main\java\br\g12\duque\antonio\gestor\Gestor.java
-D:\Gestor\src\main\java\br\g12\duque\antonio\models\Category.java
+C:\Users\judok\OneDrive\Área de Trabalho\projeto-gestor2023\Gestor\src\main\java\br\g12\duque\antonio\models\Category.java
+C:\Users\judok\OneDrive\Área de Trabalho\projeto-gestor2023\Gestor\src\main\java\br\g12\duque\antonio\dao\CategoryDao.java
+C:\Users\judok\OneDrive\Área de Trabalho\projeto-gestor2023\Gestor\src\main\java\br\g12\duque\antonio\gestor\Conexao.java
+C:\Users\judok\OneDrive\Área de Trabalho\projeto-gestor2023\Gestor\src\main\java\br\g12\duque\antonio\gestor\tests\FindByIdUseCase.java
+C:\Users\judok\OneDrive\Área de Trabalho\projeto-gestor2023\Gestor\src\main\java\br\g12\duque\antonio\gestor\repositories\IRepositoryCategory.java
+C:\Users\judok\OneDrive\Área de Trabalho\projeto-gestor2023\Gestor\src\main\java\br\g12\duque\antonio\gestor\tests\InsertCategoryUseCase.java
+C:\Users\judok\OneDrive\Área de Trabalho\projeto-gestor2023\Gestor\src\main\java\br\g12\duque\antonio\gestor\tests\ListCategoriesUseCase.java
+C:\Users\judok\OneDrive\Área de Trabalho\projeto-gestor2023\Gestor\src\main\java\br\g12\duque\antonio\gestor\Gestor.java

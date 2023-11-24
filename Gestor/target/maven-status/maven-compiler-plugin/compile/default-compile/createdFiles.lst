@@ -1,1 +1,9 @@
+br\g12\duque\antonio\gestor\tests\UpdateCategoryUseCase.class
+br\g12\duque\antonio\gestor\repositories\IRepositoryCategory.class
+br\g12\duque\antonio\gestor\Conexao.class
+br\g12\duque\antonio\gestor\tests\ListCategoriesUseCase.class
+br\g12\duque\antonio\models\Category.class
+br\g12\duque\antonio\dao\CategoryDao.class
 br\g12\duque\antonio\gestor\Gestor.class
+br\g12\duque\antonio\gestor\tests\FindByIdUseCase.class
+br\g12\duque\antonio\gestor\tests\InsertCategoryUseCase.class
